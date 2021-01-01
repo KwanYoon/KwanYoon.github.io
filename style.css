@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.topnav {
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    border-bottom: 0.3vh solid;
+    border-color: white;
+}
+  
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 2vh 2vh;
+    text-decoration: none;
+    font-size: 3vh;
+    font-family: 'Arvo';
+}
+  
+.topnav a:hover {
+    background-color: white;
+    color: #000080;
+}
+
+.topnav-scroll {
+    background-color: white;
+    color: #000080;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    border-bottom: 0.3vh solid;
+    border-color: #000080;
+}
+
+.topnav-scroll a {
+    float: left;
+    text-align: center;
+    padding: 2vh 2vh;
+    text-decoration: none;
+    font-size: 3vh;
+    font-family: 'Arvo';
+}
+
+.topnav-scroll a:hover {
+    color: white;
+    background-color: #000080;
+}
+
+.topnav-onpage {
+    color: white;
+    background-color: #000080;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(uwaterloo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#titlebar {
+    padding-top: 20vh;
+    font-size: 10vh;
+    font-weight: bold;
+    color: white;
+    font-family: 'Arvo';
+}
+
+#sub-titlebar {
+    padding-top: 1vh;
+    font-size: 5vh;
+    font-weight: normal;
+    color: white;
+    font-family: 'Arvo';
+    padding-bottom: 10vh;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.icon {
+    margin-right: 3vw;
+    margin-left: 3vw;
+    transition: transform 0.2s;
+    border-radius: 10%;
+    width: min(15vh, 10vw); 
+    height: min(15vh, 10vw);
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.section {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Arvo';
+    font-weight: normal;
+}
+
+.beige {
+    background-color: #f5f5dc;
+}
+
+#self-portrait {
+    border: 0.5vh solid;
+    border-color: black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 3%;
+}
+
+.title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: normal;
+    color:	#000080;
+}
+
+.sub-title {
+    color: #000080;
+}
+
+.small-title {
+    font-size: 30px;
+}
+
+.content {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.proj-icon {
+    border-radius: 10%;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 3%;
+}
+
+.checked {
+    color: orange;
+}
