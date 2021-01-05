@@ -100,6 +100,14 @@ html {
     padding-right: 20px;
 }
 
+@media (max-width: 1000px) {
+    .column {
+        float: none;
+        width: 100%;
+        padding-right: 0px;
+    }
+}
+
 .icon {
     margin-right: 3vw;
     margin-left: 3vw;
@@ -136,12 +144,39 @@ html {
     margin-left: 3%;
 }
 
+.aboutme {
+    margin-left: 300px;
+}
+
+@media (max-width: 1000px) {
+    #self-portrait {
+        border: 0.5vh solid;
+        border-color: black;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin-left: 3%;
+        float: none;
+    }
+    
+    .aboutme {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+}
+
 .title {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 60px;
     font-weight: normal;
     color:	#000080;
+}
+
+@media (max-width: 1000px) {
+    .title {
+        font-size: 40px;
+    }
 }
 
 .sub-title {
@@ -164,6 +199,25 @@ html {
     height: 150px;
     float: left;
     margin-left: 3%;
+}
+
+.proj-text {
+    margin-left: 250px;
+}
+
+@media (max-width: 1000px) {
+    .proj-icon {
+        border-radius: 10%;
+        width: 150px;
+        height: 150px;
+        margin-left: 3%;
+        float: none;
+    }
+    
+    .proj-text {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
 }
 
 .checked {
