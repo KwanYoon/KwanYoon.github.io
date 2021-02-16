@@ -29,12 +29,12 @@ html {
 }
   
 .topnav a:hover {
-    background-color: white;
+    background-color: #f5f5dc;
     color: #000080;
 }
 
 .topnav-scroll {
-    background-color: white;
+    background-color: #f5f5dc;
     color: #000080;
     overflow: hidden;
     position: fixed;
@@ -53,12 +53,7 @@ html {
 }
 
 .topnav-scroll a:hover {
-    color: white;
-    background-color: #000080;
-}
-
-.topnav-onpage {
-    color: white;
+    color: #f5f5dc;
     background-color: #000080;
 }
 
@@ -128,9 +123,6 @@ html {
     padding-bottom: 20px;
     font-family: 'Arvo';
     font-weight: normal;
-}
-
-.beige {
     background-color: #f5f5dc;
 }
 

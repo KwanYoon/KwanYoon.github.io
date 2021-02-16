@@ -7,51 +7,13 @@ function vh(v) {
 window.onscroll = () => {
     const nav = document.querySelector('#topnav');
     const offset = vh(7.5);
-    var profilePos = document.querySelector('#profile').offsetTop - offset,
-        profileNav = document.querySelector("#nav-profile"),
-        skillsPos = document.querySelector('#skills').offsetTop - offset,
-        skillsNav = document.querySelector('#nav-skills'),
-        projectsPos = document.querySelector('#projects').offsetTop - offset,
-        projectsNav = document.querySelector('#nav-projects'),
-        experiencesPos = document.querySelector('#experiences').offsetTop - offset,
-        experiencesNav = document.querySelector('#nav-experiences'),
-        contactsPos = document.querySelector('#contacts').offsetTop - offset,
-        contactsNav = document.querySelector('#nav-contacts');
+    var homePos = document.querySelector('#home').offsetHeight;
 
-    if(this.scrollY < profilePos) {
+    console.log(homePos);
+    if(this.scrollY < homePos - offset) {
         nav.className = 'topnav'
     } else {
         nav.className = 'topnav-scroll'
-    }
-
-    if((skillsPos < this.scrollY) || (this.scrollY < profilePos)) {
-        profileNav.className = "nav-item";
-    } else {
-        profileNav.className = "topnav-onpage";
-    }
-
-    if((projectsPos < this.scrollY) || (this.scrollY < skillsPos)) {
-        skillsNav.className = "nav-item";
-    } else {
-        skillsNav.className = "topnav-onpage";
-    }
-
-    if((experiencesPos < this.scrollY) || (this.scrollY < projectsPos)) {
-        projectsNav.className = "nav-item";
-    } else {
-        projectsNav.className = "topnav-onpage";
-    }
-
-    if((contactsPos < this.scrollY) || (this.scrollY < experiencesPos)) {
-        experiencesNav.className = "nav-item";
-    } else {
-        experiencesNav.className = "topnav-onpage";
-    }
-
-    if(this.scrollY < contactsPos) {
-        contactsNav.className = "nav-item";
-    } else {
-        contactsNav.className = "topnav-onpage";
     }
 };
 
