@@ -119,7 +119,7 @@ html {
 .section {
     padding-left: 20%;
     padding-right: 20%;
-    padding-top: 20px;
+    padding-top: 7vh;
     padding-bottom: 20px;
     font-family: 'Arvo';
     font-weight: normal;
@@ -220,4 +220,9 @@ html {
 
 .checked {
     color: orange;
+}
+
+.element {
+    padding-top: 7vh;
+    margin-top: -7vh;
 }
