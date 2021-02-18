@@ -34,7 +34,7 @@ $(document).ready(() => {
 
     $($('.nav-item')).on('click', function(e) {
         var target = $($(this).attr('href')),
-            targetPos = $(target).offset().top
+            targetPos = $(target).offset().top,
             offset = vh(7);
         
         $('body, html').animate({'scrollTop': targetPos - offset}, 5);
