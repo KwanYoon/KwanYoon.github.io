@@ -7,7 +7,7 @@ function vh(v) {
 window.onscroll = () => {
     const nav = document.querySelector('#topnav');
     const offset = vh(7.5);
-    var homePos = document.querySelector('#home').offsetHeight;
+    var homePos = document.querySelector('.home').offsetHeight;
 
     console.log(homePos);
     if(this.scrollY < homePos - offset) {
@@ -16,6 +16,7 @@ window.onscroll = () => {
         nav.className = 'topnav-scroll'
     }
 };
+
 
 $(document).ready(() => {
     $($('#titlebar')).css("visibility", "hidden");
@@ -39,4 +40,36 @@ $(document).ready(() => {
         
         $('body, html').animate({'scrollTop': targetPos - offset}, 5);
     });
+
+    setTimeout(typeWriter, 1000);
 });
+
+
+var i = 0;
+var txt = ["student", "programmer", "full-stack developer"];
+var txtPlace = 0;
+var speed = 100;
+var backspace = false;
+
+function typeWriter() {
+    if (i == 0) {
+        backspace = false;
+        document.getElementById("alternate").textContent = "";
+        txtPlace++;
+        if (txtPlace >= txt.length) {
+            txtPlace = 0;
+        }
+    } else if (i == txt[txtPlace].length) {
+        backspace = true;
+    }
+
+    if (!backspace) {
+        document.getElementById("alternate").innerHTML += txt[txtPlace].charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    } else {
+        document.getElementById("alternate").textContent = txt[txtPlace].substring(0, i);
+        i--;
+        setTimeout(typeWriter, speed);
+    }
+}
