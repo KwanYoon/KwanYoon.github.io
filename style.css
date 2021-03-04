@@ -238,6 +238,11 @@ html {
     height: 150px;
     float: left;
     margin-left: 3%;
+    transition: transform 0.2s;
+}
+
+.proj-icon:hover {
+    transform: scale(1.2);
 }
 
 .proj-text {
@@ -271,4 +276,21 @@ html {
 .element {
     padding-top: 7vh;
     margin-top: -7vh;
+}
+
+#overlay-personal-website {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlay-personal-website {
+    display: none;
 }

@@ -73,3 +73,11 @@ function typeWriter() {
         setTimeout(typeWriter, speed);
     }
 }
+
+function overlayOn() {
+    document.getElementById("overlay-personal-website").style.display = "block";
+}
+
+function overlayOff() {
+    document.getElementById("overlay-personal-website").style.display = "none";
+}
