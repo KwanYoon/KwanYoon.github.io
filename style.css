@@ -297,7 +297,7 @@ html {
 }
 
 .overlay-container {
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 60px;
     padding-right: 5%;
     padding-left: 5%;
@@ -308,9 +308,10 @@ html {
 .overlay-container dt {
     color: white;
     text-align: center;
+    font-size: 30px;
 }
 
 .overlay-image {
-    width: 100%;
+    width: 95%;
     height: auto;
 }
