@@ -32,7 +32,7 @@
 
         <div class="element" id="personal-website">
             <hr width="40%" style="margin: auto; margin-bottom: 30px; background-color: black;">
-            <div id="overlay-personal-website" class="overlay" onclick="overlayOff()">
+            <div id="overlay-personal-website-overlay" class="overlay" onclick="overlayOff(this.id)">
                 <dl class="overlay-container">
                     <dt>Front page</dt>
                     <dd><img class="overlay-image" src="Screenshots/Resume_website.jpg"></dd>
@@ -47,7 +47,7 @@
                 </dl>
             </div>
             <div>
-                <input type="image" src="icons/html.png" class="proj-icon" onclick="overlayOn()" />
+                <input id="overlay-personal-website" type="image" src="icons/html.png" class="proj-icon" onclick="overlayOn(this.id)" />
             </div>
 
             <div class="proj-text">
@@ -67,8 +67,22 @@
 
         <div class="element" id="alanaiproject">
             <hr width="70%" style="margin: auto; margin-bottom: 30px;">
+            <div id="overlay-alanaiproject-overlay" class="overlay" onclick="overlayOff(this.id)">
+                <dl class="overlay-container">
+                    <dt>Front page</dt>
+                    <dd><img class="overlay-image" src="Screenshots/Resume_website.jpg"></dd>
+                    <dt>HTML</dt>
+                    <dd><img class="overlay-image" src="Screenshots/Resume_website_html.png"></dd>
+                </dl>
+                <dl class="overlay-container">
+                    <dt>CSS</dt>
+                    <dd><img class="overlay-image" src="Screenshots/Resume_website_css.png"></dd>
+                    <dt>this that</dt>
+                    <dd><img class="overlay-image" src="Screenshots/Resume_website_js.png"></dd>
+                </dl>
+            </div>
             <div>
-                <img class="proj-icon" src="icons/alan.png">
+                <input id="overlay-alanaiproject" type="image" class="proj-icon" src="icons/alan.png" onclick="overlayOn(this.id)">
             </div>
 
             <div class="proj-text">

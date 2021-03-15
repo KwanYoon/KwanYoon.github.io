@@ -74,10 +74,10 @@ function typeWriter() {
     }
 }
 
-function overlayOn() {
-    document.getElementById("overlay-personal-website").style.display = "block";
+function overlayOn(clicked_id) {
+    document.getElementById(clicked_id + "-overlay").style.display = "block";
 }
 
-function overlayOff() {
-    document.getElementById("overlay-personal-website").style.display = "none";
+function overlayOff(clicked_id) {
+    document.getElementById(clicked_id).style.display = "none";
 }

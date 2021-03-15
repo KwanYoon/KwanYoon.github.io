@@ -278,10 +278,6 @@ html {
     margin-top: -7vh;
 }
 
-#overlay-personal-website {
-    display: none;
-}
-
 .overlay {
     margin: auto;
     position: fixed;
@@ -294,6 +290,7 @@ html {
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
     cursor: pointer;
+    display: none;
 }
 
 .overlay-container {
