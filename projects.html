@@ -123,8 +123,22 @@
 
         <div class="element" id="social-media-webapp">
             <hr width="70%" style="margin: auto; margin-bottom: 30px;">
+            <div id="overlay-social-media-webapp-overlay" class="overlay" onclick="overlayOff(this.id)">
+                <dl class="overlay-container">
+                    <dt>Front page</dt>
+                    <dd><img class="overlay-image" src="Screenshots/socialmedia_frontpage.png"></dd>
+                    <dt>Front End</dt>
+                    <dd><img class="overlay-image" src="Screenshots/socialmedia_frontend.png"></dd>
+                </dl>
+                <dl class="overlay-container">
+                    <dt>MongoDB</dt>
+                    <dd><img class="overlay-image" src="Screenshots/socialmedia_mongo.png"></dd>
+                    <dt>Alan Studio</dt>
+                    <dd><img class="overlay-image" src="Screenshots/socialmedia_backend.png"></dd>
+                </dl>
+            </div>
             <div>
-                <img class="proj-icon" src="icons/react.webp">
+                <input id="overlay-social-media-webapp" type="image" class="proj-icon" src="icons/react.webp" onclick="overlayOn(this.id)">
             </div>
 
             <div class="proj-text">
