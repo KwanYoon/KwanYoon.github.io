@@ -34,7 +34,7 @@
         <h1 style="font-size: 40px;" class="center">Languages / Frameworks: </h1>
 
         <div class="content">
-            <div class="content-section">
+            <div id="content-c">
                 <h1 class="sub-title small-title ">
                     C
                     <span><button id="skills-c" class="text-button" onClick="skillButton(this.id)">See more</button></span>
@@ -42,9 +42,14 @@
                 <div class="bar-graph">
                     <div style="width: 100%; background-color: green;" class="inner-bar-graph"></div>
                 </div>
-                <div id="skills-c-dropdown" class="dropdown">Testing dropdown</div>
+                <div id="skills-c-dropdown" style="display: none;">
+                    <br><b>Experience: </b>4 months
+                    <br><b>Used in: </b><a href="./experiences.html#cs136" class="nav-item">CS136</a>
+                    <br><b>Additional: </b>Learned C in CS136 through weekly lectures and assignments.
+                </div>
             </div>
-            <div class="content-section">
+
+            <div id="content-java">
                 <h1 class="sub-title small-title ">
                     Java
                     <span><button id="skills-java" class="text-button" onClick="skillButton(this.id)">See more</button></span>
@@ -52,7 +57,28 @@
                 <div class="bar-graph">
                     <div style="width: 90%; background-color: orange;" class="inner-bar-graph"></div>
                 </div>
-                <div id="skills-java-dropdown" class="dropdown">Testing dropdown</div>
+                <div id="skills-java-dropdown" style="display: none;">
+                    <br><b>Experience: </b>3 years
+                    <br><b>Used in: </b><a href="./experiences.html#ICS4U" class="nav-item">ICS4U</a>,
+                    <a href="./projects.html#android-application" class="nav-item">Android Application</a>
+                    <br><b>Additional: </b>Learned Java for 2 years throughout ICS3U and ICS4U, and continued polishing my 
+                    skills by developing my personal Android Application
+                </div>
+            </div>
+
+            <div id="content-racket">
+                <h1 class="sub-title small-title ">
+                    Racket
+                    <span><button id="skills-racket" class="text-button" onClick="skillButton(this.id)">See more</button></span>
+                </h1>
+                <div class="bar-graph">
+                    <div style="width: 85%; background-color: rgb(0, 132, 255);" class="inner-bar-graph"></div>
+                </div>
+                <div id="skills-racket-dropdown" style="display: none;">
+                    <br><b>Experience: </b>4 months
+                    <br><b>Used in: </b><a href="./experiences.html#cs135" class="nav-item">CS135</a>
+                    <br><b>Additional: </b>Learned Racket in CS135 through weekly lectures and assignments
+                </div>
             </div>
         </div>
     </div>
