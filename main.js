@@ -42,6 +42,14 @@ $(document).ready(() => {
     });
 
     setTimeout(typeWriter, 1000);
+
+    // See more button on skills page
+    $(".text-button").click(function() {
+        var clickedId = $(this).attr('id');
+        var dropdownId = clickedId + "-dropdown";
+        $("#" + dropdownId).slideDown();
+        $(clickedId).html("See less");
+    });
 });
 
 
