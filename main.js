@@ -74,10 +74,21 @@ function typeWriter() {
     }
 }
 
-function overlayOn(clicked_id) {
-    document.getElementById(clicked_id + "-overlay").style.display = "block";
+function overlayOn(clickedId) {
+    document.getElementById(clickedId + "-overlay").style.display = "block";
 }
 
-function overlayOff(clicked_id) {
-    document.getElementById(clicked_id).style.display = "none";
+function overlayOff(clickedId) {
+    document.getElementById(clickedId).style.display = "none";
+}
+
+function skillButton(clickedId) {
+    const displayStyle = document.getElementById(clickedId + "-dropdown").style.display;
+    if (displayStyle == "none") {
+        document.getElementById(clickedId + "-dropdown").style.display = "block";
+        document.getElementById(clickedId).innerHTML = "See less";
+    } else {
+        document.getElementById(clickedId + "-dropdown").style.display = "none";
+        document.getElementById(clickedId).innerHTML = "See more";
+    }
 }

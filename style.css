@@ -318,3 +318,22 @@ html {
     height: 10px;
     background-color: #f5f5dc;
 }
+
+.inner-bar-graph {
+    height: 10px;
+}
+
+.text-button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+    color: #000080;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.dropdown {
+    display: none;
+}
