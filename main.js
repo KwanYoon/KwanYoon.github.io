@@ -45,10 +45,15 @@ $(document).ready(() => {
 
     // See more button on skills page
     $(".text-button").click(function() {
-        var clickedId = $(this).attr('id');
+        var clickedId = "#" + $(this).attr('id');
         var dropdownId = clickedId + "-dropdown";
-        $("#" + dropdownId).slideDown();
-        $(clickedId).html("See less");
+        if ($(dropdownId).css('display') == "none") {
+            $(dropdownId).slideDown();
+            $(clickedId).html("See less");
+        } else {
+            $(dropdownId).slideUp();
+            $(clickedId).html("See more");
+        }
     });
 });
 
@@ -88,15 +93,4 @@ function overlayOn(clickedId) {
 
 function overlayOff(clickedId) {
     document.getElementById(clickedId).style.display = "none";
-}
-
-function skillButton(clickedId) {
-    const displayStyle = document.getElementById(clickedId + "-dropdown").style.display;
-    if (displayStyle == "none") {
-        document.getElementById(clickedId + "-dropdown").style.display = "block";
-        document.getElementById(clickedId).innerHTML = "See less";
-    } else {
-        document.getElementById(clickedId + "-dropdown").style.display = "none";
-        document.getElementById(clickedId).innerHTML = "See more";
-    }
 }
