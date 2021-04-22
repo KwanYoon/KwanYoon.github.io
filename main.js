@@ -94,3 +94,12 @@ function overlayOn(clickedId) {
 function overlayOff(clickedId) {
     document.getElementById(clickedId).style.display = "none";
 }
+
+$(function() {
+    $(".inner-bar-graph").each(function(key, bar) {
+        var percentage = $(this).data('percentage');
+        $(this).animate({
+            'width' : percentage + '%'
+        }, 1000);
+    });
+});

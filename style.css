@@ -321,6 +321,7 @@ html {
 
 .inner-bar-graph {
     height: 10px;
+    width: 0%;
 }
 
 .text-button {
