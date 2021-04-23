@@ -16,7 +16,7 @@ html {
     height: 7vh;
     border-bottom: 0.3vh solid;
     border-color: white;
-    z-index: 1;
+    z-index: 5;
 }
   
 .topnav a {
@@ -42,7 +42,7 @@ html {
     width: 100%;
     border-bottom: 0.3vh solid;
     border-color: #000080;
-    z-index: 1;
+    z-index: 5;
 }
 
 .topnav-scroll a {
@@ -262,7 +262,8 @@ html {
     border-radius: 10%;
     font-size: 15px;
     font-weight: bold;
-    transition: 0.5s;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .proj-images:hover {
@@ -284,19 +285,20 @@ html {
 .element {
     padding-top: 7vh;
     margin-top: -7vh;
+    z-index: 2;
 }
 
 .overlay {
     margin: auto;
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
-    z-index: 2;
+    z-index: 10;
     cursor: pointer;
     display: none;
 }
