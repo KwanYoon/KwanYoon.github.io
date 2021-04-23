@@ -71,11 +71,19 @@ $(document).ready(() => {
     })(jQuery);
     
     var allElem = $(".element");
+    var allSkills = $(".skill-section");
     
     allElem.each(function(i, el) {
         var el = $(el);
         if (el.visible()) {
             el.addClass("already-visible"); 
+        }
+    });
+
+    allSkills.each(function(i, el) {
+        var el = $(el);
+        if (el.visible()) {
+            el.addClass("already-visible");
         }
     });
     
@@ -86,12 +94,42 @@ $(document).ready(() => {
                 el.addClass("come-in"); 
             } 
         });
+
+        allSkills.each(function(i, el) {
+            var el = $(el);
+            if (el.visible() && !el.hasClass("already-visible")) {
+                el.addClass("come-in");
+                $(".inner-bar-graph").each(function(i, el) {
+                    var el = $(el);
+                    $(".inner-bar-graph").each(function(i, bar) {
+                        var bar = $(bar);
+                        if (bar.parents().hasClass("come-in")) {
+                            var percentage = bar.data('percentage');
+                            bar.animate({
+                                'width' : percentage + '%'
+                            }, 1000);
+                        }
+                    });
+                });
+            }
+        });
     });
 });
 
+$(function() {
+    $(".inner-bar-graph").each(function(i, el) {
+        var el = $(el);
+        if (el.parents().hasClass("already-visible")) {
+            var percentage = el.data('percentage');
+            el.animate({
+                'width' : percentage + '%'
+            }, 1000);
+        }
+    });
+});
 
 var i = 0;
-var txt = ["student", "programmer", "full-stack developer"];
+var txt = ["student", "programmer", "full-stack developer", "software developer"];
 var txtPlace = 0;
 var speed = 100;
 var backspace = false;
@@ -126,12 +164,3 @@ function overlayOn(clickedId) {
 function overlayOff(clickedId) {
     document.getElementById(clickedId).style.display = "none";
 }
-
-$(function() {
-    $(".inner-bar-graph").each(function(key, bar) {
-        var percentage = $(this).data('percentage');
-        $(this).animate({
-            'width' : percentage + '%'
-        }, 1000);
-    });
-});
