@@ -367,13 +367,20 @@ html {
 }
 
 .already-visible {
+    transform: translateX(0);
     transform: translateY(0);
     animation: none;
     z-index: -1;
 }
 
 .come-in {
-    transform: translateY(150px);
+    transform: translateX(200px);
+    animation: come-in 1s ease forwards;
+    z-index: -1;
+}
+
+.come-in-skills {
+    transform: translateY(200px);
     animation: come-in 1s ease forwards;
     z-index: -1;
 }

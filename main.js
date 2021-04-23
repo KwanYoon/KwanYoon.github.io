@@ -98,12 +98,12 @@ $(document).ready(() => {
         allSkills.each(function(i, el) {
             var el = $(el);
             if (el.visible() && !el.hasClass("already-visible")) {
-                el.addClass("come-in");
+                el.addClass("come-in-skills");
                 $(".inner-bar-graph").each(function(i, el) {
                     var el = $(el);
                     $(".inner-bar-graph").each(function(i, bar) {
                         var bar = $(bar);
-                        if (bar.parents().hasClass("come-in")) {
+                        if (bar.parents().hasClass("come-in-skills")) {
                             var percentage = bar.data('percentage');
                             bar.animate({
                                 'width' : percentage + '%'
