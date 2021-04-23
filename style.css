@@ -16,6 +16,7 @@ html {
     height: 7vh;
     border-bottom: 0.3vh solid;
     border-color: white;
+    z-index: 1;
 }
   
 .topnav a {
@@ -41,6 +42,7 @@ html {
     width: 100%;
     border-bottom: 0.3vh solid;
     border-color: #000080;
+    z-index: 1;
 }
 
 .topnav-scroll a {
@@ -362,4 +364,20 @@ html {
         float: none;
         margin-left: calc(50% - 75px);
     }
+}
+
+.already-visible {
+    transform: translateY(0);
+    animation: none;
+    z-index: -1;
+}
+
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 1s ease forwards;
+    z-index: -1;
+}
+
+@keyframes come-in {
+    to { transform: translateY(0); }
 }

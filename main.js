@@ -43,6 +43,7 @@ $(document).ready(() => {
 
     setTimeout(typeWriter, 1000);
 
+
     // See more button on skills page
     $(".text-button").click(function() {
         var clickedId = "#" + $(this).attr('id');
@@ -54,6 +55,37 @@ $(document).ready(() => {
             $(dropdownId).slideUp();
             $(clickedId).html("See more");
         }
+    });
+
+
+    // slide in effect
+    (function($) {
+        $.fn.visible = function() {
+            var viewTop       = $(window).scrollTop(),
+                viewBottom    = viewTop + $(window).height(),
+                _top          = $(this).offset().top,
+                _bottom       = _top + $(this).height()
+
+          return _bottom < viewBottom || _top < viewBottom;
+        };
+    })(jQuery);
+    
+    var allElem = $(".element");
+    
+    allElem.each(function(i, el) {
+        var el = $(el);
+        if (el.visible()) {
+            el.addClass("already-visible"); 
+        }
+    });
+    
+    $(window).scroll(function(event) {
+        allElem.each(function(i, el) {
+            var el = $(el);
+            if (el.visible() && !el.hasClass("already-visible")) {
+                el.addClass("come-in"); 
+            } 
+        });
     });
 });
 
