@@ -31,7 +31,7 @@
         <h1 class="title center">Projects</h1>
 
         <div class="element" id="boardgame-central">
-            <hr width="70%" style="margin: auto; margin-bottom: 30px;">
+            <hr width="40%" style="margin: auto; margin-bottom: 30px; background-color: black;">
 
             <div class="proj-side">
                 <img src="icons/socket.png" class="proj-icon" />
@@ -192,8 +192,9 @@
             </dl>
         </div>
 
+
         <div class="element" id="personal-website">
-            <hr width="40%" style="margin: auto; margin-bottom: 30px; background-color: black;">
+            <hr width="70%" style="margin: auto; margin-bottom: 30px;">
 
             <div class="proj-side">
                 <img src="icons/html.png" class="proj-icon" />
@@ -227,6 +228,45 @@
                 <dd><img class="overlay-image" src="Screenshots/Resume_website_css.png"></dd>
                 <dt>JavaScript</dt>
                 <dd><img class="overlay-image" src="Screenshots/Resume_website_js.png"></dd>
+            </dl>
+        </div>
+
+
+        <div class="element" id="space-duel">
+            <hr width="70%" style="margin: auto; margin-bottom: 30px;">
+
+            <div class="proj-side">
+                <img src="icons/python.png" class="proj-icon" />
+                <input id="overlay-space-duel" type="button" value="Click me!" class="proj-images center" onclick="overlayOn(this.id)" />
+            </div>
+
+            <div class="proj-text">
+                <a target="_blank" href="https://github.com/KwanYoon/Space-Duel">
+                    <h1 id="space-duel-title" class="sub-title">Space Duel</h1>
+                </a>
+                <br>
+                <p class="content">
+                    <b>Languages used:</b> Python
+                    <br><b>Tools used:</b> Visual Studio Code
+                    <br><b>Description:</b> Space Duel is a local 2-player PvP game built on <i>Python</i> with the <i>PyGame</i> library.
+                    <br><b>GitHub: </b><a target="_blank" href="https://github.com/KwanYoon/Space-Duel">
+                        <u>Space Duel GitHub</u></a>
+                </p>
+            </div>
+        </div>
+
+        <div id="overlay-space-duel-overlay" class="overlay" onclick="overlayOff(this.id)">
+            <dl class="overlay-container">
+                <dt>Game</dt>
+                <dd><img class="overlay-image" src="Screenshots/space-duel-game.png"></dd>
+                <dt>Python</dt>
+                <dd><img class="overlay-image" src="Screenshots/space-duel-imports.png"></dd>
+            </dl>
+            <dl class="overlay-container">
+                <dt>End Screen</dt>
+                <dd><img class="overlay-image" src="Screenshots/space-duel-end.png"></dd>
+                <dt>Python</dt>
+                <dd><img class="overlay-image" src="Screenshots/space-duel-python.png"></dd>
             </dl>
         </div>
 
