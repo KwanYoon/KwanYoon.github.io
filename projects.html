@@ -152,6 +152,44 @@
             </dl>
         </div>
 
+        <div class="element" id="friends-manager">
+            <hr width="70%" style="margin: auto; margin-bottom: 30px;">
+
+            <div class="proj-side">
+                <img src="icons/sql.png" class="proj-icon" />
+                <input id="overlay-friends-manager" type="button" value="Click me!" class="proj-images center" onclick="overlayOn(this.id)" />
+            </div>
+
+            <div class="proj-text">
+                <h1 id="friends-manager-title" class="sub-title">Friends Manager</h1>
+                <br>
+                <p class="content">
+                    <b>Languages used:</b> SQL, Python
+                    <br><b>Technologies used: </b>MySQL
+                    <br><b>Tools used:</b> PyCharm, PopSQL
+                    <br><b>Description:</b> Built an application where you can keep track of your friends' birthdays, likes, dislikes, and
+                    other information with <i>Python</i>. The data is stored on a <i>MySQL</i> local database.
+                    <br><b>GitHub: </b><a target="_blank" href="https://github.com/KwanYoon/FriendsManager">
+                        <u>Friends Manager GitHub</u></a>
+                </p>
+            </div>
+        </div>
+
+        <div id="overlay-friends-manager-overlay" class="overlay" onclick="overlayOff(this.id)">
+            <dl class="overlay-container">
+                <dt>Create</dt>
+                <dd><img style="width: 65%;" class="center" src="Screenshots/friends-manager-create.png"></dd>
+                <dt>Read</dt>
+                <dd><img style="width: 65%;" class="center" src="Screenshots/friends-manager-read.png"></dd>
+            </dl>
+            <dl class="overlay-container">
+                <dt>Update</dt>
+                <dd><img style="width: 65%;" class="center" src="Screenshots/friends-manager-update.png"></dd>
+                <dt>Delete</dt>
+                <dd><img style="width: 65%;" class="center" src="Screenshots/friends-manager-delete.png"></dd>
+            </dl>
+        </div>
+
 
         <div class="element" id="android-application">
             <hr width="70%" style="margin: auto; margin-bottom: 30px;">
@@ -284,9 +322,7 @@
             </div>
 
             <div class="proj-text">
-                <a target="_blank" href="https://github.com/KwanYoon/Space-Duel">
-                    <h1 id="space-duel-title" class="sub-title">Space Duel</h1>
-                </a>
+                <h1 id="space-duel-title" class="sub-title">Space Duel</h1>
                 <br>
                 <p class="content">
                     <b>Languages used:</b> Python
