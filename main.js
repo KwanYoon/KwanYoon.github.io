@@ -23,13 +23,13 @@ $(document).ready(() => {
     $($('#sub-titlebar')).css("visibility", "hidden");
     $($('#linkedin')).css("visibility", "hidden");
     $($('#github')).css("visibility", "hidden");
-    $($('#website')).css("visibility", "hidden");
+    $($('#resume')).css("visibility", "hidden");
 
     $($('#titlebar')).css("visibility", "visible").hide().fadeIn(600, function() {
         $($('#sub-titlebar')).css("visibility", "visible").hide().fadeIn(500, function() {
             $($('#linkedin')).css("visibility", "visible").hide().fadeIn(500);
             $($('#github')).css("visibility", "visible").hide().fadeIn(500);
-            $($('#website')).css("visibility", "visible").hide().fadeIn(500);
+            $($('#resume')).css("visibility", "visible").hide().fadeIn(500);
         })
     });
 
